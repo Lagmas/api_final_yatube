@@ -47,12 +47,12 @@ Linux
 > python3 manage.py runserver
 
 
-***Использованные технологии.***
+***Использованные технологии:***
 
 Python 3.7, Django 2.2.16,  Django Rest Framework 3.12.4, Djoser, Simple JWT
 
 
-*** Примеры запросов к API:***
+***Примеры запросов к API:***
 
 ```
 GET /api/v1/posts/
