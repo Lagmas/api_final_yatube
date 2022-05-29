@@ -60,51 +60,63 @@ Linux
 
 > python3 manage.py runserver
 
-***Примеры.***
-```
-GET http://127.0.0.1:8000/api/v1/posts/
-[
-    {
-        "id": 1,
-        "author": "User3",
-        "text": "В лесу родилась ёлочка, в лесу она росла...",
-        "pub_date": "2022-02-23T16:39:25.754620Z",
-        "image": null,
-        "group": 1
-    },
-...
+### Примеры запросов к API:
 
-...
-POST http://127.0.0.1:8000/api/v1/posts/
+```
+GET /api/v1/posts/
+
+Response:
 {
-"text": "string",
-"image": "string",
-"group": 0
+  "count": 123,
+  "next": "http://api.example.org/accounts/?offset=400&limit=100",
+  "previous": "http://api.example.org/accounts/?offset=200&limit=100",
+  "results": [
+    {}
+   ]
 }
-Response samples 201
+
+POST /api/v1/posts/
+
+Response:
 {
-"id": 0,
-"author": "string",
-"text": "string",
+ "text": "string",
+ "image": "string",
+ "group": 0
+}
+
+Request:
+{
+ "id": 0,
+ "author": "string",
+ "text": "string",
 "pub_date": "2019-08-24T14:15:22Z",
-"image": "string",
-"group": 0
+ "image": "string",
+ "group": 0
 }
-```
-```
-PATCH http://127.0.0.1:8000/api/v1/posts/{post_id}/comments/{id}/
+
+GET /api/v1/follow/
+
+Response:
+[
+  {
+    "user": "string",
+    "following": "string"
+  }
+]
+
+POST /api/v1/follow/
+
+Request:
 {
-"text": "string"
+  "following": "string
 }
-Response samples 200
+
+Response:
 {
-"id": 0,
-"author": "string",
-"text": "string",
-"created": "2019-08-24T14:15:22Z",
-"post": 0
+  "user": "string",
+  "following": "string"
 }
-```
+
 
 ***Использованные технологии.***
 
