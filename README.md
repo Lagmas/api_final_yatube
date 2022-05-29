@@ -55,7 +55,7 @@ Python 3.7, Django 2.2.16,  Django Rest Framework 3.12.4, Djoser, Simple JWT
 ***Примеры запросов к API:***
 
 ```
-**GET /api/v1/posts/**
+###### GET /api/v1/posts/
 
 Response:
 {
