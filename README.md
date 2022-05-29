@@ -1,4 +1,4 @@
-**API для соцсети блогеров Yatube**
+***API для соцсети блогеров Yatube***
 
 * У неаутентифицированных пользователей доступ к API только на уровне чтения.
 * Исключение — эндпоинт /follow/: доступ к нему только аутентифицированным пользователям.
@@ -34,20 +34,6 @@ Linux
 
 > pip install -r requirements.txt
 
-Сгенерировать и вставить в файл settings.py SECRET_KEY:
-
-> python manage.py shell
-
-|>>>from django.core.management.utils import get_random_secret_key
-
-|>>>get_random_secret_key()
-
-YOUR_KEY
-
-|>>> quit()
-
-скопировать полученное значение в settings.py SECRET_KEY = 'YOUR_KEY'
-
 Выполнить миграции и запустить проект:
 
 Windows
@@ -66,7 +52,7 @@ Linux
 Python 3.7, Django 2.2.16,  Django Rest Framework 3.12.4, Djoser, Simple JWT
 
 
-### Примеры запросов к API:
+*** Примеры запросов к API:***
 
 ```
 GET /api/v1/posts/
