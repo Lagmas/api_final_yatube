@@ -60,6 +60,12 @@ Linux
 
 > python3 manage.py runserver
 
+
+***Использованные технологии.***
+
+Python 3.7, Django 2.2.16,  Django Rest Framework 3.12.4, Djoser, Simple JWT
+
+
 ### Примеры запросов к API:
 
 ```
@@ -117,12 +123,3 @@ Response:
   "following": "string"
 }
 
-
-***Использованные технологии.***
-
-Python 3.7, Django 2.2.16,  Django Rest Framework 3.12.4, Djoser, Simple JWT
-
-
-```
-Алексей
-```
