@@ -74,6 +74,7 @@ GET http://127.0.0.1:8000/api/v1/posts/
     },
 ...
 
+...
 POST http://127.0.0.1:8000/api/v1/posts/
 {
 "text": "string",
@@ -107,9 +108,8 @@ Response samples 200
 
 ***Использованные технологии.***
 
-Python 3.9.7, Django 2.2.16,  Django Rest Framework 3.12.4, Djoser, Simple JWT
+Python 3.7, Django 2.2.16,  Django Rest Framework 3.12.4, Djoser, Simple JWT
 
-Для тестирония API использовался - Postman
 
 ```
 Алексей
